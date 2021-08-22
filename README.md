@@ -8,7 +8,7 @@
  > 모트모트만의 매력과 페이지의 디자인/기획이 마음에 들어 디자인/기획 부분만 클론했습니다. <br/>
  > 개발은 초기 세팅부터 직접 구현했으며, 데모 영상에서 알 수 있듯이 모든 부분이 백앤드와 통신으로 이루어져 있습니다. 
 
-## 개발 인원 및 기간
+## WeeteWeete Team & Term
 - 개발기간 : 2021/8/2 ~ 2021/8/13
 
 - 개발 인원 : 프론트엔드 4명, 백엔드 2명
@@ -19,7 +19,7 @@
 
 - [프론트엔드 github 링크] : https://github.com/wecode-bootcamp-korea/23-1st-Weeteweete-frontend
 
-## 프로젝트 구현영상
+## Project Video
 -  https://www.youtube.com/watch?v=_oMzIV2oyxE
 
 ## 적용 기술 및 구현 기능
@@ -30,7 +30,7 @@
 
 ### 구현 기능
 
-#### 로그인/회원가입
+#### SignIn/SignUp
 - Bcrypt 암호화, JWT를 이용한 인증/인가
 - Fidn Account/UUID Moduel 활용한 Temporary Password 생성 및 저장
 
@@ -39,18 +39,18 @@
 - 메인 페이지 : 판매량 순 상위 8개 상품 정렬
 - 메뉴 페이지 : 상품의 category, option, concept, color 별 분류
 
-#### 상품 상세 페이지
+#### DetailPage
 - 상품 id를 parameter로 받아 상품 Data와 Review를 표출하는 기능 구현
 
-#### 상품 후기
+#### Review
 - Django Static 개념 활용하여 Image Fild Upload 기능 구현
 - 상품을 구매한 User만 Reveiw 작성 가능하도록 Decorator로 JWT 인가
 
-#### 장바구니
+#### Cart
 - User 장바구니 상품의 C.R.U.D
 - Detail Page에서의 Update는 수량 추가, Cart Page에서의 Update는 수량 변경이 되도록 Condition 적용
 
-#### 상품 구매
+#### Purchase
 - Item에 대한 OrderStatus, OrderItemStatus를 ENUM(열거형)으로 표현하여 Order Flow 시각화
 - Item 구매 시 Item 재고량, 판매수량, Point 변화
 - 원자성을 보장하기 위한 Transaction 적용
