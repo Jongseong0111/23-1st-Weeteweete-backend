@@ -13,11 +13,16 @@
 
 - 팀원 [프론트엔드]
 
-- 최호정: nav, footer, 메인페이지, 제품리스트페이지, 상품 리뷰
-- 차예은: 결제 form
-- 배윤아: 로그인/회원가입, 아이디/비밀번호 찾기, 결제 table
-- 이나현: 상세페이지, 장바구니
-- 
+ - 최호정: nav, footer, 메인페이지, 제품리스트페이지, 상품 리뷰
+ - 차예은: 결제 form
+ - 배윤아: 로그인/회원가입, 아이디/비밀번호 찾기, 결제 table
+ - 이나현: 상세페이지, 장바구니
+
+ [백엔드]
+
+ - 백선호: 로그인/회원가입, 비밀번호 초기화, 아이디 찾기, 로그인 데코레이터, 상품 결제, 상품 리뷰
+ - 임종성: 모델링, 메인페이지, 상세페이지, 메뉴페이지, 장바구니 CRUD, 상품 리뷰
+ - 
 - [프론트엔드 github 링크] : https://github.com/wecode-bootcamp-korea/23-1st-Weeteweete-frontend
 
 ## 프로젝트 구현영상
@@ -30,28 +35,31 @@
 - Back-End : Python, Django web framework, Bcrypt, My SQL, RESTful API
 
 ## 구현 기능
-- 로그인/회원가입
-- ID 찾기/임시 비밀번호 생성 및 저장
-- 사용자 인가
 
-### 메인 페이지/메뉴 페이지
-- 메뉴, 메인 페이지를 하나의 메서드에서 호출
+### 로그인/회원가입
+- Bcrypt 암호화, JWT를 이용한 인증/인가
+- Fidn Account/UUID Moduel 활용한 Temporary Password 생성 및 저장
+
+### PageView
+- Query Paramter와 Ternary Operator 활용하여 Main/Menu 페이지 통합 구현
 - 메인 페이지 : 판매량 순 상위 8개 상품 정렬
 - 메뉴 페이지 : 상품의 category, option, concept, color 별 분류
 
 ### 상품 상세 페이지
-- 상품의 상세정보와 삼품 후기를 호출
+- 상품 id를 parameter로 받아 상품 Data와 Review를 표출하는 기능 구현
 
 ### 상품 후기
-- 구매한 사용자만 작성 가능
-- 상품 후기 작성 시 form 데이터로 requset & static을 이용한 이미지 파일 저장
+- Django Static 개념 활용하여 Image Fild Upload 기능 구현
+- 상품을 구매한 User만 Reveiw 작성 가능하도록 Decorator로 JWT 인가
 
 ### 장바구니
-- 사용자의 장바구니 상품의 CRUD
+- User 장바구니 상품의 C.R.U.D
+- Detail Page에서의 Update는 수량 추가, Cart Page에서의 Update는 수량 변경이 되도록 Condition 적용
 
 ### 상품 구매
-- 상품 구매 시 상품의 상태와 주문자의 상태 변화
-- 상품 구매 시 구매한 수량만큼의 재고량이 감소, 사용자의 보유 포인트 감소, 상품의 판매수량 증가
+- Item에 대한 OrderStatus, OrderItemStatus를 ENUM(열거형)으로 표현하여 Order Flow 시각화
+- Item 구매 시 Item 재고량, 판매수량, Point 변화
+- 원자성을 보장하기 위한 Transaction 적용
 
 # Reference
 
