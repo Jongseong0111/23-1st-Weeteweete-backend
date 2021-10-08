@@ -23,6 +23,22 @@
 
 [시연영상](https://www.youtube.com/watch?v=_oMzIV2oyxE)
 
+### 메인
+
+![main](https://user-images.githubusercontent.com/84963683/136560747-69a0c5e0-2c32-4f8b-92d6-f6d3fc3a3e42.gif)
+
+### 로그인 / 회원가입
+![로그인](https://user-images.githubusercontent.com/84963683/136559571-437f4173-1fae-43c6-82ec-c29f5ae3a2c1.gif)
+
+![회원가입](https://user-images.githubusercontent.com/84963683/136559591-405ff159-a59b-4c55-9453-97de43cb659c.gif)
+
+### 장바구니 / 주문
+![장바구니](https://user-images.githubusercontent.com/84963683/136560776-29515133-7a50-4d1a-826a-2c6a7842c984.gif)
+
+![주문](https://user-images.githubusercontent.com/84963683/136560791-e412e736-1f6d-42f3-9ee4-4655e36da701.gif)
+
+![주문2](https://user-images.githubusercontent.com/84963683/136560800-e75b5e32-e416-4296-b144-8f8651d956c3.gif)
+
 ## 사용 기술
 
 [Backend] : Python, Django
