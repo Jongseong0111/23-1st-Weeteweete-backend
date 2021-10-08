@@ -1,59 +1,74 @@
- # WeeteWeete(위트위트)
+ ## 📓 WeeteWeete 프로젝트 소개
  
- ## Introduction To WeeteWeete Project
+ ![image](https://user-images.githubusercontent.com/84963683/136541442-e10a989e-e8e1-4a7d-a41a-98091e12cb19.png)
 
+ **Color라는 가치관을 담아내 감각적이고 심플하지만 강력한 구성, 부드러운 필기감을 구현한 모트모트 Motive Project**
+ 
  > Colorize your life with weete weete<br/>
  > 색은 특별함을 담는 가장 강력한 요소입니다. <br/>
- > 'color'라는 가치관에 생각과 감정을 정리하는 노트를 판매하는 모트모트 페이지가 매력적으로 느껴졌습니다. <br/>
- > 모트모트만의 매력과 페이지의 디자인/기획이 마음에 들어 디자인/기획 부분만 클론했습니다. <br/>
- > 개발은 초기 세팅부터 직접 구현했으며, 데모 영상에서 알 수 있듯이 모든 부분이 백앤드와 통신으로 이루어져 있습니다. 
+ > 2주라는 짧은 프로젝트 기간 내에 개발에 집중해야 하므로 디자인/기획 부분만 클론했습니다.   
+ > 개발은 초기 세팅과 데이터 모델링을 직접 진행하고 실제 MoteMote 사이트의 기능을 대부분 구현했습니다.   
+ > 시연영상에 나오는 부분은 Frontend - Backend간 통신으로 실제 사용할 수 있는 서비스 수준으로 개발했습니다.   
 
-## WeeteWeete Team & Term
-- 개발기간 : 2021/8/2 ~ 2021/8/13
+## 개발 인원 및 기간
+- [총 프로젝트 기간] : 2021.08.02 ~2021.08.13
+- [개발 인원] 
+  - Frontend 4명(최호정, 차예은, 배윤아, 이나현)
+  - Backend 2명(백선호, 임종성)
 
-- 개발 인원 : 프론트엔드 4명, 백엔드 2명
+## Modeling
+![image](https://user-images.githubusercontent.com/84963683/136546044-936b7119-9def-4104-9780-ab4b9efcc540.png)
 
-- 팀원 [프론트엔드]
- - [프론트엔드] : 최호정, 차예은, 배윤아, 이나현
- - [백엔드] : 백선호, 임종성
+## 프로젝트 구현 페이지
 
-- [프론트엔드 github 링크] : https://github.com/wecode-bootcamp-korea/23-1st-Weeteweete-frontend
+[시연영상](https://www.youtube.com/watch?v=_oMzIV2oyxE)
 
-## Project Video
--  https://www.youtube.com/watch?v=_oMzIV2oyxE
+## 사용 기술
 
-## 적용 기술 및 구현 기능
+[Backend] : Python, Django
+[DevOps] : Mysql, AWS EC2, RDS, POSTMAN
 
-### 적용 기술
+## 구현 기능
 
-- Back-End : Python, Django web framework, Bcrypt, My SQL, RESTful API
+내가 구현한 기능🙌
 
-### 구현 기능
+### Members🙌
 
-#### SignIn/SignUp
-- Bcrypt 암호화, JWT를 이용한 인증/인가
-- Fidn Account/UUID Moduel 활용한 Temporary Password 생성 및 저장
+- Bcrypt 암호화와 JWT를 이용한 로그인 / 회원가입
+- 사용자의 편의를 위한 아이디 찾기 
+- UUID 모듈을 활용한 임시비밀번호 생성 
 
-#### PageView
-- Query Paramter와 Ternary Operator 활용하여 Main/Menu 페이지 통합 구현
-- 메인 페이지 : 판매량 순 상위 8개 상품 정렬
-- 메뉴 페이지 : 상품의 category, option, concept, color 별 분류
+### Products🙌
 
-#### DetailPage
-- 상품 id를 parameter로 받아 상품 Data와 Review를 표출하는 기능 구현
+- Main/Menu Page를 하나의 API로 통합
+- Query parameter를 활용해 상품 필터링(Category, Option, Concept, Color 등) 
+- Django Static Module을 사용해 상품 리뷰 이미지 파일을 Local에 저장
+- 상품 상세 정보 확인 API 구현
+- 평점과 작성시간을 기준으로 상품 후기를 정렬
+- 상품을 구매한 사용자만 후기 작성이 가능하도록 Login Decorator 활용
 
-#### Review
-- Django Static 개념 활용하여 Image Fild Upload 기능 구현
-- 상품을 구매한 User만 Reveiw 작성 가능하도록 Decorator로 JWT 인가
+### Orders🙌
 
-#### Cart
-- User 장바구니 상품의 C.R.U.D
-- Detail Page에서의 Update는 수량 추가, Cart Page에서의 Update는 수량 변경이 되도록 Condition 적용
+- 상품 장바구니의 C.R.U.D API
+- Orderstatus를 ENUM으로 표현하여 Order Flow 시각화
+- 상품 구매 API에 Transaction을 적용해 원자성을 보장
+- 상품 구매시 재고량 / 포인트 / 판매수량 / 상태 변화 구현
 
-#### Purchase
-- Item에 대한 OrderStatus, OrderItemStatus를 ENUM(열거형)으로 표현하여 Order Flow 시각화
-- Item 구매 시 Item 재고량, 판매수량, Point 변화
-- 원자성을 보장하기 위한 Transaction 적용
+## 커뮤니케이션
+
+### Stand Up Meeting
+
+매일 11시 Stand Up Meeting을 통해 In progress - Done과 Front-Back간 소통을 진행하고 매주 Sprint Meeting을 실행했습니다.
+
+### Trello
+
+![image](https://user-images.githubusercontent.com/84963683/136553563-1a702ad0-24ed-48f4-bc76-3dbe213a7055.png)
+
+Front/Back으로 라벨을 분류하고 담당자를 표기하여 직관적으로 확인할 수 있도록 했습니다.
+
+### [Google Spreadsheet(API Documentation)](https://docs.google.com/spreadsheets/d/1PQloL3tWtjEiXV1-C4fMiV3jH8Ei1RrNkqakNAejlLo/edit?usp=sharing)
+
+API별 기능, URL, Request 및 Response Key Value와 특이사항을 정리하여 프론트엔드와 공유하였습니다.
 
 ## Reference
 
