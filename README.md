@@ -2,7 +2,7 @@
  
  ![image](https://user-images.githubusercontent.com/84963683/136541442-e10a989e-e8e1-4a7d-a41a-98091e12cb19.png)
 
- **Color라는 가치관을 담아내 감각적이고 심플하지만 강력한 구성, 부드러운 필기감을 구현한 모트모트 Motive Project**
+ **Color라는 가치관을 담아내 감각적이고 심플하지만 강력한 구성, 부드러운 필기감을 구현한 [모트모트](https://motemote.kr/contents/collabs.html) Motive Project**
  
  > Colorize your life with weete weete<br/>
  > 색은 특별함을 담는 가장 강력한 요소입니다. <br/>
@@ -68,12 +68,11 @@ Front/Back으로 라벨을 분류하고 담당자를 표기하여 직관적으�
 
 ### [Google Spreadsheet(API Documentation)](https://docs.google.com/spreadsheets/d/1PQloL3tWtjEiXV1-C4fMiV3jH8Ei1RrNkqakNAejlLo/edit?usp=sharing)
 
+![image](https://user-images.githubusercontent.com/84963683/136554959-d7457e76-e529-48e6-aaef-8dbafd8f420d.png)
+
 API별 기능, URL, Request 및 Response Key Value와 특이사항을 정리하여 프론트엔드와 공유하였습니다.
 
 ## Reference
 
 - 이 프로젝트는 모트모트 사이트를 참조하여 학습목적으로 만들었습니다.
 - 실무수준의 프로젝트이지만 학습용으로 만들었기 때문에 이 코드를 활용하여 이득을 취하거나 무단 배포할 경우 법적으로 문제될 수 있습니다.
-- 이 프로젝트에서 사용하고 있는 사진 대부분은 위코드에서 구매한 것이므로 해당 프로젝트 외부인이 사용할 수 없습니다.
-
-- 모트모트: https://motemote.kr/
