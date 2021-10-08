@@ -16,7 +16,7 @@
   - Frontend 4명(최호정, 차예은, 배윤아, 이나현)
   - Backend 2명(백선호, 임종성)
 
-## Modeling
+## Database Modeling
 ![image](https://user-images.githubusercontent.com/84963683/136546044-936b7119-9def-4104-9780-ab4b9efcc540.png)
 
 ## 프로젝트 구현 페이지
